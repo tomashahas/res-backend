@@ -5,7 +5,7 @@ import bodyParser from "body-parser";
 import cookieParser from "cookie-parser";
 
 const app = express();
-const PORT = 9080;
+const PORT = process.env.PORT || 9080;
 
 app.use(cors());
 app.use(bodyParser.json());
